@@ -11,9 +11,9 @@ EMAIL_LIST=$( cat $( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null &&
 
 TO="${EMAIL_LIST}"
 /usr/sbin/sendmail -i $TO <<MAIL_END
-Subject: ISSDAQPC alert
+Subject: ISS alert
 To: $TO
-This is an automatic alert email from ISSDAQPC
+This is an automatic alert email from ISSDAQPC2
 Device: $1
 Status has changed to: $2
 MAIL_END
